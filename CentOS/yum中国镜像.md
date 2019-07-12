@@ -102,7 +102,7 @@ gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 
 [epel-debuginfo]
-name=Extra Packages for Enterprise Linux 7 - $basearch - Debug
+name=Extra Packages for Enterprise Linux 7 - \$basearch - Debug
 baseurl=https://mirrors.aliyuncs.com/epel/7/\$basearch/debug
         https://mirrors.aliyun.com/epel/7/\$basearch/debug
         https://mirrors.tuna.tsinghua.edu.cn/epel/7/\$basearch/debug
