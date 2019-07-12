@@ -92,27 +92,27 @@ yum install epel-release
 mv /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak
 cat << EOF > /etc/yum.repos.d/epel.repo
 [epel]
-name=Extra Packages for Enterprise Linux 7 - $basearch
-baseurl=https://mirrors.aliyuncs.com/epel/7/$basearch
-        https://mirrors.aliyun.com/epel/7/$basearch
-        https://mirrors.tuna.tsinghua.edu.cn/epel/7/$basearch
+name=Extra Packages for Enterprise Linux 7 - \$basearch
+baseurl=https://mirrors.aliyuncs.com/epel/7/\$basearch
+        https://mirrors.aliyun.com/epel/7/\$basearch
+        https://mirrors.tuna.tsinghua.edu.cn/epel/7/\$basearch
 failovermethod=priority
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 
 [epel-debuginfo]
-name=Extra Packages for Enterprise Linux 7 - $basearch - Debug
-baseurl=https://mirrors.aliyuncs.com/epel/7/$basearch/debug
-        https://mirrors.aliyun.com/epel/7/$basearch/debug
-        https://mirrors.tuna.tsinghua.edu.cn/epel/7/$basearch/debug
+name=Extra Packages for Enterprise Linux 7 - \$basearch - Debug
+baseurl=https://mirrors.aliyuncs.com/epel/7/\$basearch/debug
+        https://mirrors.aliyun.com/epel/7/\$basearch/debug
+        https://mirrors.tuna.tsinghua.edu.cn/epel/7/\$basearch/debug
 failovermethod=priority
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 gpgcheck=1
 
 [epel-source]
-name=Extra Packages for Enterprise Linux 7 - $basearch - Source
+name=Extra Packages for Enterprise Linux 7 - \$basearch - Source
 baseurl=https://mirrors.aliyuncs.com/epel/7/SRPMS
         https://mirrors.aliyun.com/epel/7/SRPMS
         https://mirrors.tuna.tsinghua.edu.cn/epel/7/SRPMS
